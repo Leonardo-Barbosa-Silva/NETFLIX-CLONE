@@ -1,0 +1,88 @@
+.star {
+    height: 100vh;
+}
+
+.star-vertical {
+    width: inherit;
+    height: inherit;
+    background: linear-gradient(to top, #111 5%, transparent 95%);
+}
+
+.star-horizontal {
+    width: inherit;
+    height: inherit;
+    background: linear-gradient(to right, #111 20%, transparent 80%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 30px;
+    padding-bottom: 120px;
+    padding-top: 50px;
+}
+
+.star-name {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.star-info {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.star-points,
+.star-year,
+.star-seasons {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.star-points {
+    color: #46d369;
+}
+
+.star-description {
+    margin-top: 15px;
+    font-size: 20px;
+    color: #999;
+    max-width: 35%;
+}
+
+.star-buttons {
+    margin-top: 15px;
+}
+
+.star-watch-button,
+.star-mylist-button {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-right: 10px;
+    opacity: 1;
+    transition: all ease 0.25s;
+}
+
+.star-watch-button:hover,
+.star-mylist-button:hover {
+    opacity: 0.6;
+}
+
+.star-watch-button {
+    background-color: #fff;
+    color: #000;
+}
+
+.star-mylist-button {
+    background-color: #333;
+    color: #fff
+}
+
+.star-genres {
+    margin-top: 15px;
+    font-size: 18px;
+    color: #999;
+}
