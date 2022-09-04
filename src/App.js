@@ -79,6 +79,11 @@ export default () => {
                 ))}
             </section>
 
+            <footer>
+                Made by <span role='img' aria-label='ghost'>👻</span> Leonardo Barbosa<br/>All rights for Netflix
+                <br/>All rights for themoviedb.org
+            </footer>
+
         </div>
     )
 

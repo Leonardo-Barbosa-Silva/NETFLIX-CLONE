@@ -6,13 +6,43 @@
     margin: 0px 0px 0px 30px;
 }
 
+.arrow-left,
+.arrow-right {
+    position: absolute;
+    width: 45px;
+    height: 225px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0, 0.7);
+    z-index: 99;
+    cursor: pointer;
+    opacity: 0;
+    transition: all ease 0.5s;
+}
+
+.arrow-left {
+    left: 0;
+}
+
+.arrow-right {
+    right: 0;
+}
+
+.arrow-left img,
+.arrow-right img {
+    width: 100%;
+    height: 20%;
+    filter: invert(100%)
+}
+
 .moviesRow-list-area {
     overflow-x: hidden;
     padding-left: 30px;
 }
 
 .moviesRow-list {
-    width: 99999999px;
+    transition: all ease 0.5s;
 }
 
 .moviesRow-list-item {
@@ -29,4 +59,9 @@
 
 .moviesRow-list-item img:hover {
     transform: scale(1);
+}
+
+.moviesRow:hover .arrow-left,
+.moviesRow:hover .arrow-right {
+    opacity: 1;
 }
