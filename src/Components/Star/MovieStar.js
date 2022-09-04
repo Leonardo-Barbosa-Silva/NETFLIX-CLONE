@@ -11,6 +11,18 @@ export default ({ item }) => {
         genres.push(item.genres[i].name)
     }
 
+    const description = (text) => {
+        let overview = ''
+
+        if (text.length > 200) {
+            overview = text.substring(0, 250) + '...'
+        } else {
+            overview = text
+        }
+
+        return overview
+    }
+
     return (
         <section className='star' style={{
             backgroundSize: 'cover',
@@ -25,7 +37,7 @@ export default ({ item }) => {
                         <div className='star-year'>{item.first_air_date.split('-')[0]}</div>
                         <div className='star-seasons'>{item.number_of_seasons} temporada{item.number_of_seasons !== 1 ? 's' : ''}</div>
                     </div>
-                    <div className='star-description'>{item.overview}</div>
+                    <div className='star-description'>{description(item.overview)}</div>
                     <div className='star-buttons'>
                         <a href={`/watch/${item.id}`} className='star-watch-button'>► Assistir</a>
                         <a href={`/list/add/${item.id}`} className='star-mylist-button'>+ Minha Lista</a>

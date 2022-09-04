@@ -86,3 +86,18 @@
     font-size: 18px;
     color: #999;
 }
+
+@media (max-width: 800px) {
+    .star-name {
+        font-size: 30px;
+    }
+
+    .star-description {
+        max-width: 90%;
+    }
+
+    .star-watch-button,
+    .star-mylist-button {
+        font-size: 15px;
+    }
+}
